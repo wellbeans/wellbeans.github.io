@@ -1,0 +1,42 @@
+@import 'jeet'
+@import 'reset.css'
+@import 'socicon.css'
+
+@font-face
+	font-family 'apercu-regular'
+	src url('../fonts/apercu-regular/apercu-regular.eot')
+	src url('../fonts/apercu-regular/apercu-regular.eot?#iefix') format('embedded-opentype'),url('../fonts/apercu-regular/apercu-regular.woff') format('woff'),url('../fonts/apercu-regular/apercu-regular.ttf') format('truetype'),url('../fonts/apercu-regular/apercu-regular.svg#apercu-regular') format('svg')
+	font-weight 400
+	font-style normal
+	font-stretch normal
+
+@font-face
+	font-family 'clearface'
+	src url('../fonts/clearface/clearface.eot')
+	src url('../fonts/clearface/clearface.eot?#iefix') format('embedded-opentype'),url('../fonts/clearface/clearface.woff') format('woff'),url('../fonts/clearface/clearface.ttf') format('truetype'),url('../fonts/clearface/clearface.svg#clearface') format('svg')
+	font-weight 400
+	font-style normal
+	font-stretch normal
+
+placeholder()
+	&::-webkit-input-placeholder
+		{block}
+	&:-moz-placeholder
+		{block}
+	&::-moz-placeholder
+		{block}
+	&:-ms-input-placeholder
+		{block}
+
+@import '_variables'
+@import '_typography'
+@import '_header'
+@import '_sections'
+@import '_footer'
+
+html
+body
+	min-height 100%
+
+body
+	border 6px solid lighten($purple,20%)

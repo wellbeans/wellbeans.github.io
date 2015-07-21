@@ -1,0 +1,125 @@
+.first-tagline-wrap
+.second-tagline-wrap
+.list-wrap
+.form-wrap
+footer
+	padding 60px 10px
+	+above($break)
+		padding 100px 20px
+	cf()
+
+.first-tagline-wrap
+	padding-top 0
+	+below($break)
+		padding-bottom 0
+		padding-left 0
+		padding-right 0
+	+above($break)
+		center($container-width)
+		padding-left 20px
+		padding-right 20px
+	.tagline
+	img
+		col(1/1)
+		+above($break)
+			col(1/2)
+	.tagline
+		+above($break)
+			shift(1/2)
+	h1
+		color lighten($purple,30%)
+		margin-bottom 0
+		padding 0 10px 60px
+		+above($break)
+			padding 0 10px
+		+above($break)
+			margin-top 22px
+		text-align center
+	img
+		+above($break)
+			shift(-1/2)
+			border 1px solid $purple
+
+.second-tagline-wrap
+	background lighten($orange,20%)
+	h2
+		center(760px)
+		margin-bottom 0
+		color white
+		text-align center
+
+.list-wrap
+	p
+		text-align center
+		center(600px)
+		margin-bottom 0
+	p > em
+		display:block
+	.list-container
+		padding 60px 0
+		+above($break)
+			padding 60px 0
+		center($container-width)
+		.list
+		img
+			col(1/1)
+			+above($break)
+				col(1/2)
+		img
+			+above($break)
+				border 1px solid $purple
+		.list
+			ul
+				&:last-of-type
+					margin-bottom 0
+			text-align center
+			+below($break)
+				margin-bottom 60px
+			+above($break)
+				position relative
+				transform translateY(22%)
+			li
+				display block
+
+.form-wrap
+	background $purple
+	h2
+		color white
+		text-align center
+		margin-bottom 25px
+	form
+		max-width 600px
+		margin  0 auto
+		cf()
+	input[type=email]
+	input[type=text]
+	textarea
+		width 100%
+		max-width 100%
+		margin-bottom 10px
+		display block
+		padding 25px
+		border 0
+		background alpha(white,40%)
+		border-bottom 2px solid white
+		transition all .16s ease-in-out
+		+placeholder()
+			color white
+		&:focus
+			outline 0
+			background alpha(white,80%)
+			+placeholder()
+				color $purple
+	input[type=submit]
+		padding 10px 25px
+		float right
+		border 2px solid white
+		background $purple
+		color white
+		transition all .16s ease-in-out
+		outline 0
+		&:hover
+			background lighten($purple,20%)
+		&:focus
+			outline 0
+
