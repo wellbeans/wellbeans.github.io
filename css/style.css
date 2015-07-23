@@ -68,12 +68,14 @@ header {
 header img {
   width: 320px;
   max-width: 100%;
+  border-top: 6px solid #ff7043;
+  border-bottom: 6px solid #614e7c;
+  padding: 15px 0;
 }
 .first-tagline-wrap,
 .second-tagline-wrap,
 .list-wrap,
-.form-wrap,
-footer {
+.form-wrap {
   padding: 60px 10px;
   *zoom: 1;
 }
@@ -81,8 +83,7 @@ footer {
   .first-tagline-wrap,
   .second-tagline-wrap,
   .list-wrap,
-  .form-wrap,
-  footer {
+  .form-wrap {
     padding: 100px 20px;
   }
 }
@@ -90,20 +91,17 @@ footer {
 .second-tagline-wrap:before,
 .list-wrap:before,
 .form-wrap:before,
-footer:before,
 .first-tagline-wrap:after,
 .second-tagline-wrap:after,
 .list-wrap:after,
-.form-wrap:after,
-footer:after {
+.form-wrap:after {
   content: '';
   display: table;
 }
 .first-tagline-wrap:after,
 .second-tagline-wrap:after,
 .list-wrap:after,
-.form-wrap:after,
-footer:after {
+.form-wrap:after {
   clear: both;
 }
 .first-tagline-wrap {
@@ -210,14 +208,14 @@ footer:after {
 }
 @media only screen and (min-width: 968px) {
   .first-tagline-wrap h1 {
-    margin-top: 22px;
+    margin-top: 40px;
   }
 }
 @media only screen and (min-width: 968px) {
   .first-tagline-wrap img {
     position: relative;
     left: -51.5%;
-    border: 1px solid #3c304d;
+    border: 2px solid #3c304d;
   }
 }
 .second-tagline-wrap {
@@ -348,7 +346,7 @@ footer:after {
 }
 @media only screen and (min-width: 968px) {
   .list-wrap .list-container img {
-    border: 1px solid #3c304d;
+    border: 2px solid #3c304d;
   }
 }
 .list-wrap .list-container .list {
@@ -374,7 +372,7 @@ footer:after {
   display: block;
 }
 .form-wrap {
-  background: #3c304d;
+  background: #614e7c;
 }
 .form-wrap h2 {
   color: #fff;
@@ -437,41 +435,47 @@ footer:after {
 .form-wrap input[type=email]:focus::-webkit-input-placeholder,
 .form-wrap input[type=text]:focus::-webkit-input-placeholder,
 .form-wrap textarea:focus::-webkit-input-placeholder {
-  color: #3c304d;
+  color: #4e3f65;
 }
 .form-wrap input[type=email]:focus:-moz-placeholder,
 .form-wrap input[type=text]:focus:-moz-placeholder,
 .form-wrap textarea:focus:-moz-placeholder {
-  color: #3c304d;
+  color: #4e3f65;
 }
 .form-wrap input[type=email]:focus::-moz-placeholder,
 .form-wrap input[type=text]:focus::-moz-placeholder,
 .form-wrap textarea:focus::-moz-placeholder {
-  color: #3c304d;
+  color: #4e3f65;
 }
 .form-wrap input[type=email]:focus:-ms-input-placeholder,
 .form-wrap input[type=text]:focus:-ms-input-placeholder,
 .form-wrap textarea:focus:-ms-input-placeholder {
-  color: #3c304d;
+  color: #4e3f65;
 }
 .form-wrap input[type=submit] {
   padding: 10px 25px;
   float: right;
   border: 2px solid #fff;
-  background: #3c304d;
+  background: #4e3f65;
   color: #fff;
   -webkit-transition: all 0.16s ease-in-out;
           transition: all 0.16s ease-in-out;
   outline: 0;
 }
 .form-wrap input[type=submit]:hover {
-  background: #614e7c;
+  background: #3c304d;
 }
 .form-wrap input[type=submit]:focus {
   outline: 0;
 }
 footer {
+  padding: 60px 10px 40px;
   text-align: center;
+}
+@media only screen and (min-width: 968px) {
+  footer {
+    padding: 100px 20px 80px;
+  }
 }
 footer .social-icons {
   margin-bottom: 50px;
@@ -491,6 +495,7 @@ footer a.telephone {
   color: #614e7c;
   -webkit-transition: all 0.16s ease-in-out;
           transition: all 0.16s ease-in-out;
+  margin-bottom: 20px;
 }
 footer a.e-mail:hover,
 footer a.telephone:hover {
@@ -506,4 +511,9 @@ body {
 }
 body {
   border: 6px solid #614e7c;
+}
+@media only screen and (min-width: 968px) {
+  body {
+    border: 10px solid #614e7c;
+  }
 }

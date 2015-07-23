@@ -2,7 +2,6 @@
 .second-tagline-wrap
 .list-wrap
 .form-wrap
-footer
 	padding 60px 10px
 	+above($break)
 		padding 100px 20px
@@ -33,12 +32,12 @@ footer
 		+above($break)
 			padding 0 10px
 		+above($break)
-			margin-top 22px
+			margin-top 40px
 		text-align center
 	img
 		+above($break)
 			shift(-1/2)
-			border 1px solid $purple
+			border 2px solid $purple
 
 .second-tagline-wrap
 	background lighten($orange,20%)
@@ -67,7 +66,7 @@ footer
 				col(1/2)
 		img
 			+above($break)
-				border 1px solid $purple
+				border 2px solid $purple
 		.list
 			ul
 				&:last-of-type
@@ -82,7 +81,7 @@ footer
 				display block
 
 .form-wrap
-	background $purple
+	background lighten($purple,20%)
 	h2
 		color white
 		text-align center
@@ -109,17 +108,17 @@ footer
 			outline 0
 			background alpha(white,80%)
 			+placeholder()
-				color $purple
+				color lighten($purple,10%)
 	input[type=submit]
 		padding 10px 25px
 		float right
 		border 2px solid white
-		background $purple
+		background lighten($purple,10%)
 		color white
 		transition all .16s ease-in-out
 		outline 0
 		&:hover
-			background lighten($purple,20%)
+			background $purple
 		&:focus
 			outline 0
 
