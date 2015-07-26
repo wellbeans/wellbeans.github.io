@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "browser-sync": "^2.6.5",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-stylus": "^2.0.1",
+    "gulp-util": "^3.0.4",
+    "jeet": "^6.1.2",
+    "rupture": "^0.6.1"
+  }
+}

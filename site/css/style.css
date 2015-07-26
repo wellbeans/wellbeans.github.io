@@ -517,3 +517,10 @@ body {
     border: 10px solid #614e7c;
   }
 }
+hr {
+  border: 0;
+  height: 2px;
+  background: #614e7c;
+  max-width: 200px;
+  margin: 60px auto;
+}
